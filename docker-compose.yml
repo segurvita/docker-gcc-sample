@@ -1,8 +1,8 @@
 version: '3'
 services:
-  gcc-sample:
+  gcc-clang-sample:
     image: 'gcc:9.2'
     volumes:
-      - ./app:/src/app
-    working_dir: /src/app
+      - ./clang:/src/clang
+    working_dir: /src/clang
     command: ./build.sh
