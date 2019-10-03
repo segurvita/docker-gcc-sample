@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gcc-sample:
+    image: 'gcc:9.2'
+    volumes:
+      - ./app:/src/app
+    working_dir: /src/app
+    command: ./build.sh
