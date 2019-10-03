@@ -6,3 +6,9 @@ services:
       - ./clang:/src/clang
     working_dir: /src/clang
     command: ./build.sh
+  gcc-cpp-sample:
+    image: 'gcc:9.2'
+    volumes:
+      - ./cpp:/src/cpp
+    working_dir: /src/cpp
+    command: ./build.sh
