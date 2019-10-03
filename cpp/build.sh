@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compile
-gcc hello.c -o hello
+g++ hello.cpp -o hello
 
 # Execute
 ./hello
